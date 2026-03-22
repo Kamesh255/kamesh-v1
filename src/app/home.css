@@ -1,0 +1,22 @@
+.main {
+  overflow: hidden;
+  color: var(--dark-blue);
+}
+ 
+.name{
+  background: linear-gradient(90deg, #3da9fc, #1e40af);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+}
