@@ -13,17 +13,19 @@ const CodeStats = () => {
                     <p>Github <span><SiGithub /></span> :  <b>Kamesh255</b></p>
 
                     <img
-                        style={{ width: "100%" }}
+                        style={{ width: "100%",cursor: "pointer" }}
                         src="https://github-readme-streak-stats.herokuapp.com/?user=Kamesh255&theme=default"   // tokyonight -> dark, 
                         alt="github streak"
+                        onClick={() => window.open("https://github.com/Kamesh255", "_blank")}
                     />
                 </div>
                 <div className="col-md-6 p-2 text-start">
                     <p>LeetCode <span><SiLeetcode /></span> : <b>kamesh255</b></p>
                     <img
-                        style={{ width: "100%" }}
+                        style={{ width: "100%",cursor: "pointer" }}
                         src="https://leetcard.jacoblin.cool/kamesh255?theme=light&font=Baloo" //dark - > dark
                         alt="leetcode stats"
+                        onClick={() => window.open("https://leetcode.com/u/kamesh255/", "_blank")}
                     />
                 </div>
             </div>
