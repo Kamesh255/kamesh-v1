@@ -25,6 +25,7 @@
   font-size: 40px;
   font-weight: 600;
   text-wrap: nowrap;
+  cursor: pointer;
 }
 
 .desktop {
@@ -51,7 +52,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 15px;
 }
 .mobile {
   display: none;
