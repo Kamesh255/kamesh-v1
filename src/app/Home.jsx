@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useRouter } from "next/navigation";
+import ScrollButton from "./ScrollButton";
 
 const project = [
   {
@@ -40,16 +41,18 @@ const Home = () => {
     AOS.init({ duration: 1500 });
   });
   const router = useRouter();
-
+// google-site-verification=BUE-M1Axige73bniHOonc5g5yP9OvQCGdX75FADNW7w
   return (
     <div className="main">
       <div className="col-11 m-auto row align-items-center justify-content-between">
         <div className="col-md-6">
           <div className="py-4">
-            <p className="fs-1 fw-bold" data-aos="fade-up">
+            <p className="fs-2 fw-bold" data-aos="fade-up">
               Hi, I'm <br />
-              <span className="fw-bold sky-blue name">Kamesh Hedau</span>
             </p>
+            <h1 className="fs-1 fw-bold  name" data-aos="fade-up">
+              Kamesh Hedau
+            </h1>
             <p className="fs-3 fw-bold" data-aos="fade-up">
               Senior Frontend Developer
             </p>
@@ -218,6 +221,7 @@ const Home = () => {
 
         <br />
       </div>
+        <ScrollButton />
     </div>
   );
 };

@@ -79,7 +79,7 @@ export const experienceData = [
 const Experience = () => {
   return (
     <div>
-      <p className="fs-1 fw-bold text-center">Experience</p>
+      <h1 className="fs-1 fw-bold text-center">Experience</h1>
       <p className="fs-5 tjutify col-md-8 col-11 m-auto">
         A summary of my professional journey and contributions as a frontend
         developer.

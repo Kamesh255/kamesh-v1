@@ -96,9 +96,9 @@ const About = () => {
     <div style={{ overflow: "hidden" }}>
       <div className="col-11 m-auto row align-items-center gap-md-0 gap-5 my-4">
         <div className="col-md-6">
-          <p className="fs-1 fw-bold" data-aos="fade-up">
+          <h1 className="fs-1 fw-bold" data-aos="fade-up">
             About Me
-          </p>
+          </h1>
           <p className="fs-5 tjustify  col-md-10 col-12" data-aos="fade-up">
             I'm a frontend developer with 4 years of experience building modern
             and responsive web applications. I focus on performance, clean code

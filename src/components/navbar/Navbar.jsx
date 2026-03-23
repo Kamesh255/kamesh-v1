@@ -32,7 +32,7 @@ const Navbar = () => {
 
       <div className={styles.main}>
         <div className={styles.nav}>
-          <div className={`${styles.nav_icon} sky-blue name`} onClick={() => handleNavigation('/')}>Kamesh hedau</div>
+          <div className={`${styles.nav_icon}  name`} onClick={() => handleNavigation('/')}>Kamesh hedau</div>
           <div className={styles.desktop}>
             <p onClick={() => handleNavigation('/')}  className={pathname === "/" ? styles.activePath : ""}>Home</p>
             <p onClick={() => handleNavigation('/about')} className={pathname === "/about" ? styles.activePath : ""}>About</p>

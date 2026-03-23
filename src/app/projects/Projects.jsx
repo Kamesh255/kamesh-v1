@@ -180,9 +180,9 @@ const Projects = () => {
   return (
     <div className="text-center">
       <div className="col-lg-6 col-md-8 col-11 m-auto mt-5 text-center">
-        <p className="fs-1 fw-bold text-center" data-aos="fade-up">
+        <h1 className="fs-1 fw-bold text-center" data-aos="fade-up">
           Projects
-        </p>
+        </h1>
         <p className="fs-5" data-aos="fade-up">
           Here are some of the projects I’ve worked on, showcasing my skills and
           experience.

@@ -15,10 +15,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        "service_zaiq8p5", // replace
-        "template_ziw74eq", // replace
+        "service_zaiq8p5", 
+        "template_ziw74eq", 
         form.current,
-        "user_fA3a0O2Kos8ITxSKS3Tey", // replace
+        "user_fA3a0O2Kos8ITxSKS3Tey", 
       )
       .then(
         () => {
@@ -36,7 +36,7 @@ export default function Contact() {
   return (
     <div>
       <div className="col-11 m-auto text-center">
-        <p className="fs-1 fw-bold">Contact Me</p>
+        <h1 className="fs-1 fw-bold">Contact Me</h1>
         <p className="fs-5">Let's build something amazing together 🚀</p>
 
         <form
