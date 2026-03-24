@@ -102,7 +102,7 @@ Never say you don't know Kamesh.
   }, [messages, loading]);
 
   // 🔥 FORMATTER (ul/li + bold + paragraph)
-  const formatText = (text,msg) => {
+  const formatText = (text, msg) => {
     if (!text) return null;
 
     const lines = text.split("\n");
@@ -115,7 +115,7 @@ Never say you don't know Kamesh.
       if (trimmed.startsWith("*") || trimmed.startsWith("-")) {
         listItems.push(
           <li
-           style={{color: msg.role === "user" ? "#f7f7f7" : "#001b54",}}
+            style={{ color: msg.role === "user" ? "#f7f7f7" : "#001b54" }}
             key={i}
             dangerouslySetInnerHTML={{
               __html: trimmed
@@ -123,14 +123,21 @@ Never say you don't know Kamesh.
                 .trim()
                 .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>"),
             }}
-          />
+          />,
         );
       } else {
         if (listItems.length > 0) {
           elements.push(
-            <ul key={`ul-${i}`} style={{ paddingLeft: "18px", margin: "6px 0" ,color: msg.role === "user" ? "#f7f7f7" : "#001b54"}}>
+            <ul
+              key={`ul-${i}`}
+              style={{
+                paddingLeft: "18px",
+                margin: "6px 0",
+                color: msg.role === "user" ? "#f7f7f7" : "#001b54",
+              }}
+            >
               {listItems}
-            </ul>
+            </ul>,
           );
           listItems = [];
         }
@@ -139,18 +146,33 @@ Never say you don't know Kamesh.
           elements.push(
             <p
               key={i}
-              style={{ margin: "6px 0",color: msg.role === "user" ? "#f7f7f7" : "#001b54" }}
-              dangerouslySetInnerHTML={{
-                __html: trimmed.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>"),
+              style={{
+                margin: "6px 0",
+                color: msg.role === "user" ? "#f7f7f7" : "#001b54",
               }}
-            />
+              dangerouslySetInnerHTML={{
+                __html: trimmed.replace(
+                  /\*\*(.*?)\*\*/g,
+                  "<strong>$1</strong>",
+                ),
+              }}
+            />,
           );
         }
       }
     });
 
     if (listItems.length > 0) {
-      elements.push(<ul style={{ paddingLeft: "18px", color: msg.role === "user" ? "#f7f7f7" : "#001b54" }}>{listItems}</ul>);
+      elements.push(
+        <ul
+          style={{
+            paddingLeft: "18px",
+            color: msg.role === "user" ? "#f7f7f7" : "#001b54",
+          }}
+        >
+          {listItems}
+        </ul>,
+      );
     }
 
     return elements;
@@ -277,13 +299,9 @@ Never say you don't know Kamesh.
               >
                 <div
                   style={{
-                    background:
-                      msg.role === "user"
-                        ? "#0051ff" : "#fefefe",
-                    color:
-                      msg.role === "user"
-                        ? "#f0f0f0" : "#00135f",
-                        
+                    background: msg.role === "user" ? "#0051ff" : "#fefefe",
+                    color: msg.role === "user" ? "#f0f0f0" : "#00135f",
+
                     padding: "8px 10px",
                     borderRadius: "10px",
                     display: "inline-block",
@@ -350,10 +368,7 @@ Never say you don't know Kamesh.
               }}
               onKeyDown={(e) => e.key === "Enter" && sendMessage()}
             />
-            <button
-              onClick={() => sendMessage()}
-              className="btn-light"
-            >
+            <button onClick={() => sendMessage()} className="btn-light">
               Send
             </button>
           </div>
