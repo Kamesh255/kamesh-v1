@@ -14,7 +14,7 @@
 }
 
 [data-theme="dark"] {
-  --bg-color: radial-gradient(circle, #020617, #000);
+  --bg-color:  rgb(0, 8, 27) !important;
   --text-color: #6d91aa !important;
   --card-text: #6d91aa;
 }
@@ -27,7 +27,9 @@ body {
 
 body {
   color: var(--text-color);
-  background: var(--bg-color);
+  background: var(--bg-color) !important;
+  transition: background 0.8s ease,  color 0.6s ease;
+
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
