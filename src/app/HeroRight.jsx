@@ -106,7 +106,7 @@ function CenterImage() {
           borderRadius: "50%",
           objectFit: "cover",
           border: "3px solid #3da9fc",
-          boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 10px"
+          boxShadow: "rgba(9, 129, 228, 0.56) 0px 22px 70px 10px"
         }}
       />
     </Html>

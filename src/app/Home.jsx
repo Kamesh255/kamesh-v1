@@ -125,12 +125,12 @@ const Home = () => {
           </div>
         </div>
         <div className="col-md-6">
-          {/* <div className="homeMobile"> */}
+          <div className="homeMobile">
             <HeroRight />
-          {/* </div> */}
-          {/* <div className="homeDesktop"> */}
-            {/* <HeroSection /> */}
-          {/* </div> */}
+          </div>
+          <div className="homeDesktop">
+            <HeroSection />
+          </div>
         </div>
       </div>
 
