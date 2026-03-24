@@ -75,9 +75,9 @@ const Home = () => {
   const router = useRouter();
   return (
     <div className="main">
-      <div className="col-11 m-auto row align-items-center justify-content-between">
-        <div className="col-md-6">
-          <div className="py-4">
+      <div className=" m-auto row align-items-center justify-content-between">
+        <div className="col-md-6 ">
+          <div className="py-4 col-md-10 col-11 m-auto">
             <p className="fs-2 fw-bold" data-aos="fade-up">
               Hi, I'm <br />
             </p>
@@ -125,12 +125,12 @@ const Home = () => {
           </div>
         </div>
         <div className="col-md-6">
-          <div className="homeMobile">
+          {/* <div className="homeMobile"> */}
             <HeroRight />
-          </div>
-          <div className="homeDesktop">
-            <HeroSection />
-          </div>
+          {/* </div> */}
+          {/* <div className="homeDesktop"> */}
+            {/* <HeroSection /> */}
+          {/* </div> */}
         </div>
       </div>
 
