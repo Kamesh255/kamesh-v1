@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
   const form = useRef();
@@ -15,10 +16,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        "service_zaiq8p5", 
-        "template_ziw74eq", 
+        "service_zaiq8p5",
+        "template_ziw74eq",
         form.current,
-        "user_fA3a0O2Kos8ITxSKS3Tey", 
+        "user_fA3a0O2Kos8ITxSKS3Tey",
       )
       .then(
         () => {
@@ -34,11 +35,10 @@ export default function Contact() {
   };
 
   return (
-    <div>
+    <div className="mt-5">
       <div className="col-11 m-auto text-center">
         <h1 className="fs-1 fw-bold">Contact Me</h1>
         <p className="fs-5">Let's build something amazing together 🚀</p>
-
         <form
           className="col-lg-6 col-md-6 col-12 m-auto text-start"
           ref={form}
@@ -104,6 +104,33 @@ export default function Contact() {
             <p className="fs-4 fw-bold">Location :</p>
             <p className="fs-5">Bengluru, Karnataka</p>
           </div>
+          <div className="d-flex gap-4 mt-3 align-items-center">
+            <a
+              href="https://github.com/Kamesh255"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub style={{ fontSize: "30px", color: "#463e3e" }} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kamesh-hedau-b22349226/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin style={{ fontSize: "30px" }} className="sky-blue" />
+            </a>
+            <button
+              className="btn-light"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/drive/folders/1v4ovUXHIFI43obv0XsFdWAZ6Zv2_ovVG",
+                  "_blank",
+                )
+              }
+            >
+              View Resume
+            </button>
+          </div>
         </div>
         <div className="col-md-7 col-12">
           <div
@@ -119,6 +146,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <br />
     </div>
   );
 }

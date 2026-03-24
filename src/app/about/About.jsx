@@ -9,6 +9,8 @@ import {
   FaBootstrap,
   FaGit,
   FaGithubSquare,
+  FaGithub,
+  FaLinkedin,
 } from "react-icons/fa";
 
 import {
@@ -30,7 +32,7 @@ export const skillsData = [
     title: "Frontend",
     items: [
       { name: "React", icon: <FaReact color="#61DBFB" size={36} /> },
-      { name: "Next.js", icon: <SiNextdotjs color="#000" size={36} /> },
+      { name: "Next.js", icon: <SiNextdotjs color="#3f3434" size={36} /> },
       { name: "JavaScript", icon: <SiJavascript color="#f7df1e" size={36} /> },
       { name: "HTML", icon: <FaHtml5 color="#e34c26" size={36} /> },
       { name: "CSS", icon: <FaCss3Alt color="#264de4" size={36} /> },
@@ -48,7 +50,7 @@ export const skillsData = [
     title: "Tools & Others",
     items: [
       { name: "Git", icon: <FaGit color="#f1502f" size={36} /> },
-      { name: "GitHub", icon: <FaGithubSquare color="#000" size={36} /> },
+      { name: "GitHub", icon: <FaGithubSquare color="#463e3e" size={36} /> },
       { name: "VS Code", icon: <VscVscode color="#029aff" size={36} /> },
 
       { name: "Redux", icon: <TbBrandRedux color="#7952b3" size={36} /> },
@@ -57,7 +59,7 @@ export const skillsData = [
   {
     title: "Additional",
     items: [
-      { name: "Three.js", icon: <SiThreedotjs color="#000" size={36} /> },
+      { name: "Three.js", icon: <SiThreedotjs color="#18363f" size={36} /> },
       {
         name: "Responsive Design",
         icon: <MdDevices color="#3da9fc" size={36} />,
@@ -93,7 +95,7 @@ const About = () => {
     AOS.init({ duration: 1500 });
   });
   return (
-    <div style={{ overflow: "hidden" }}>
+    <div className="mt-5" style={{ overflow: "hidden" }}>
       <div className="col-11 m-auto row align-items-center gap-md-0 gap-5 my-4">
         <div className="col-md-6">
           <h1 className="fs-1 fw-bold" data-aos="fade-up">
@@ -104,6 +106,36 @@ const About = () => {
             and responsive web applications. I focus on performance, clean code
             and creating seamless user experiences.
           </p>
+          <div
+            className="d-flex gap-4 mt-3 align-items-center"
+            data-aos="fade-up"
+          >
+            <a
+              href="https://github.com/Kamesh255"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub style={{ fontSize: "30px", color: "#463e3e" }} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kamesh-hedau-b22349226/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin style={{ fontSize: "30px" }} className="sky-blue" />
+            </a>
+            <button
+              className="btn-light"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/drive/folders/1v4ovUXHIFI43obv0XsFdWAZ6Zv2_ovVG",
+                  "_blank",
+                )
+              }
+            >
+              View Resume
+            </button>
+          </div>
         </div>
         <div className="col-md-6">
           <div className="m-auto aboutImg" data-aos="zoom-in">
@@ -135,7 +167,7 @@ const About = () => {
         <p className="fs-1 fw-semibold" data-aos="fade-up">
           What I Do
         </p>
-        <ul>
+        <ul className="ulText">
           <li className="fs-5 mt-3 tjustify" data-aos="fade-up">
             Build scalable frontend architectures using React and Next.js
           </li>
@@ -188,9 +220,11 @@ const About = () => {
               <div className="darkcard col-11 m-auto h-100 " data-aos="zoom-in">
                 <div className="text-start p-3">
                   <p className="fs-3 fw-bold sky-blue">{item.title}</p>
-                  <p className="fs-5 fw-bold">{item.degree}</p>
-                  <p className="fs-5  fw-lighter">{item.institution}</p>
-                  <p className="fs-7">{item.year}</p>
+                  <p className="fs-5 fw-bold cardText">{item.degree}</p>
+                  <p className="fs-5  fw-lighter cardText">
+                    {item.institution}
+                  </p>
+                  <p className="fs-7 cardText">{item.year}</p>
                 </div>
               </div>
             </div>

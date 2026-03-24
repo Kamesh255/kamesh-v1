@@ -12,7 +12,11 @@
   padding: 10px;
   height: 70px;
   width: 100%;
+  color: white;
   z-index: 999;
+}
+.main p {
+  color: aliceblue;
 }
 
 .nav {
@@ -44,10 +48,9 @@
   color: var(--pink-red);
 }
 .desktop p.activePath {
-  color: var(--sky-blue); 
+  color: var(--sky-blue);
 }
 
- 
 .nav_tool {
   display: flex;
   align-items: center;
@@ -59,6 +62,9 @@
 }
 .mobile_menu {
   display: none;
+}
+.navbtn {
+  display: block;
 }
 
 @media (max-width: 1400px) {
@@ -100,11 +106,11 @@
     transition:
       opacity 1s ease,
       visibility 1s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-      color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: var(--white);
   }
   .mobile_menu.active {
     z-index: 100;
@@ -135,18 +141,25 @@
     color: var(--white);
     cursor: pointer;
   }
-  .mobile_menu_items{
+  .mobile_menu_items {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 15px;
   }
+  .mobile_menu_items p {
+    cursor: pointer;
+    color: white;
+  }
 }
 
 @media (max-width: 768px) {
   .nav_icon {
     font-size: 25px;
+  }
+  .navbtn {
+    display: none;
   }
 }
 

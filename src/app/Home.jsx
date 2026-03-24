@@ -8,31 +8,63 @@ import "aos/dist/aos.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import ScrollButton from "./ScrollButton";
+// import HeroRight from "./HeroRight";
+import dynamic from "next/dynamic";
 
-const project = [
+const HeroRight = dynamic(() => import("./HeroRight"), {
+  ssr: false,
+});
+
+export const projects = [
   {
-    name: "Plastic Innovation",
-    description:
-      "Plastic Innovations specializes in custom plastic solutions, offering expertise in design, prototyping, and manufacturing. They provide a range of services, including injection molding, blow molding, and thermoforming, catering to diverse industries. Their focus is on delivering high-quality, innovative plastic products tailored to meet specific client needs.",
-    skills: ["React JS", "HTML", "CSS", "Bootstrap", "NPM"],
-    image: "/image/plasticSite.png",
-    link: "https://plasticinnovations.com/",
+    title: "Plastic Innovation",
+    tagline: "Custom Manufacturing Platform",
+    desc: "Developed a fully responsive and performance-optimized business website with clean UI architecture and seamless navigation across devices, delivering a production-ready frontend solution.",
+    img: "/image/plasticSite.png",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
+    link: "http://plasticinnovations.com/",
+    role: "Frontend Developer",
+    projects: "(client project - Hilab Solutions)",
   },
   {
-    name: "Arthro 3D",
-    description:
-      "Arthro3D provides 3D visualization tools for orthopedic surgical planning. Their technology creates detailed, customizable models to assist surgeons in improving precision and outcomes in orthopedic procedures.",
-    skills: ["React JS", "HTML", "CSS", "Bootstrap", "NPM"],
-    image: "/image/arthro3d.png",
+    title: "Chashmaghar",
+    tagline: "E-commerce Platform",
+    desc: "Developed an intuitive e-commerce UI with optimized product browsing and responsive design, improving usability and engagement in a production-level environment.",
+    img: "/image/chshmaghar.png",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
+    link: "https://www.chashmaghar.in/",
+    role: "Frontend Developer",
+    projects: "(client project - Hilab Solutions)",
+  },
+  {
+    title: "Arthro 3D",
+    tagline: "3D Healthcare Platform",
+    desc: "Designed and developed interactive UI for complex 3D visualization workflows, focusing on clarity, performance, and seamless user interaction.",
+    img: "/image/arthro3D.png",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://arthro3d.com/",
+    role: "Frontend Developer",
+    projects: "(client project - Hilab Solutions)",
   },
   {
-    name: "Chiku Orchard",
-    description:
-      "Discover Chiku Orchard, where timeless beauty meets modern elegance. With 19 years of wedding event management experience, our 100,000 sq. ft. property boasts a stunning landscape of majestic Chiku trees. Enjoy a magical ambiance and immerse yourself in nature.",
-    skills: ["React JS", "HTML", "CSS", "Bootstrap", "NPM"],
-    image: "/image/chiku.png",
+    title: "KDCC Bank",
+    tagline: "Banking Services Platform",
+    desc: "Developed a clean and responsive UI with optimized navigation and accessibility, ensuring smooth user experience.",
+    img: "/image/kddc.png",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
+    link: "https://www.kdccbank.in/",
+    role: "Frontend Developer",
+    projects: "(client project - Hilab Solutions)",
+  },
+  {
+    title: "Chiku Orchard",
+    tagline: "Event & Venue Platform",
+    desc: "Designed a visually engaging and responsive frontend with smooth layouts and improved user interaction.",
+    img: "/image/chiku.png",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://thechiku.in/",
+    role: "Frontend Developer",
+    projects: "(client project - Hilab Solutions)",
   },
 ];
 
@@ -41,7 +73,6 @@ const Home = () => {
     AOS.init({ duration: 1500 });
   });
   const router = useRouter();
-// google-site-verification=BUE-M1Axige73bniHOonc5g5yP9OvQCGdX75FADNW7w
   return (
     <div className="main">
       <div className="col-11 m-auto row align-items-center justify-content-between">
@@ -70,7 +101,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaGithub style={{ fontSize: "30px" }} className="dark-blue" />
+                <FaGithub style={{ fontSize: "30px", color: "#463e3e" }} />
               </a>
               <a
                 href="https://www.linkedin.com/in/kamesh-hedau-b22349226/"
@@ -94,7 +125,12 @@ const Home = () => {
           </div>
         </div>
         <div className="col-md-6">
-          <HeroSection />
+          <div className="homeMobile">
+            <HeroRight />
+          </div>
+          <div className="homeDesktop">
+            <HeroSection />
+          </div>
         </div>
       </div>
 
@@ -117,47 +153,47 @@ const Home = () => {
       </div>
 
       <div className="col-11 m-auto row justify-content-center">
-        <div className="col-lg-4 col-md-6 col-12 mt-5">
+        <div className="col-lg-4 col-md-6 col-12 mt-5 ">
           <div
-            className="darkcard col-11 m-auto text-center  "
+            className="darkcard col-11 m-auto text-center h-100  "
             data-aos="zoom-in"
           >
-            <div className="p-3">
-              <p className="fs-1">
+            <div className="p-3 ">
+              <p className="fs-1 cardText">
                 💼 <CountUp end={4} suffix="" />
               </p>
-              <p className="fs-3">Years of Experience</p>
+              <p className="fs-3 cardText">Years of Experience</p>
             </div>
           </div>
         </div>
 
         <div className="col-lg-4 col-md-6 col-12 mt-5">
           <div
-            className="darkcard col-11 m-auto text-center "
+            className="darkcard col-11 m-auto text-center h-100 "
             data-aos="zoom-in"
           >
             <div className="p-3">
-              <p className="fs-1">
+              <p className="fs-1 cardText">
                 {" "}
                 🚀
                 <CountUp end={20} suffix="+" />
               </p>
-              <p className="fs-3"> Completed Projects </p>
+              <p className="fs-3 cardText"> Completed Projects </p>
             </div>
           </div>
         </div>
 
         <div className="col-lg-4 col-md-6 col-12 mt-5">
           <div
-            className="darkcard col-11 m-auto text-center "
+            className="darkcard col-11 m-auto text-center h-100 "
             data-aos="zoom-in"
           >
             <div className="p-3">
-              <p className="fs-1">
+              <p className="fs-1 cardText">
                 {" "}
                 ⭐<CountUp end={100} suffix="%" />
               </p>
-              <p className="fs-3"> Client Satisfaction</p>
+              <p className="fs-3 cardText"> Client Satisfaction</p>
             </div>
           </div>
         </div>
@@ -175,37 +211,51 @@ const Home = () => {
         </div>
 
         <div className="col-11 m-auto row  justify-content-center">
-          {project.map((item, index) => (
+          {projects.map((item, index) => (
             <div className="col-lg-4 col-md-6 col-12 mt-5" key={index}>
               <div
-                className="darkcard col-11 m-auto text-center h-100 "
+                className="darkcard col-11 m-auto  h-100 "
                 data-aos="zoom-in"
               >
                 <img
-                  src={item.image}
+                  src={item.img}
                   className="projectImg"
                   alt={`Project ${index + 1}`}
                 />
                 <div>
-                  <p className="fs-3 fw-bold sky-blue">{item.name}</p>
-                  <p className="fs-7 tjustify">{item.description}</p>
-                  <div className=" d-flex gap-3 align-items-center py-3 mb-5 flex-wrap">
+                  <p className="fs-4 fw-semibold sky-blue mt-2">{item.title}</p>
+                  <p className="fs-6  text-center cardText">{item.tagline}</p>
+
+                  <p className="fs-7 text-start mt-2 cardText">{item.desc}</p>
+                  <p className="fs-7 my-2 text-start cardText ">
+                    <b>Role :</b> {item.role}
+                  </p>
+                  {item.projects && item.projects != "" && (
+                    <p className="fs-7 my-2 text-start cardText">
+                      <b>Project :</b> {item.projects}
+                    </p>
+                  )}
+                  {item.link && item.link != "" && (
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="fs-7 sky-blue"
+                      style={{ textAlign: "start" }}
+                    >
+                      Live link
+                    </a>
+                  )}
+
+                  <p className="mt-3 mb-2 cardText">
+                    <b> Tech Stack</b>
+                  </p>
+                  <div className=" d-flex gap-3 align-items-center flex-wrap">
                     {item.skills.map((skill, skillIndex) => (
                       <span className="skillsTag" key={skillIndex}>
                         {skill}
                       </span>
                     ))}
-                  </div>
-                  <div
-                    style={{ position: "absolute", bottom: "20px", left: "0" }}
-                    className="col-12 d-flex justify-content-center"
-                  >
-                    <button
-                      className="btn-light "
-                      onClick={() => window.open(item.link, "_blank")}
-                    >
-                      Live Demo
-                    </button>
                   </div>
                 </div>
               </div>
@@ -221,7 +271,6 @@ const Home = () => {
 
         <br />
       </div>
-        <ScrollButton />
     </div>
   );
 };

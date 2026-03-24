@@ -2,12 +2,8 @@
   overflow: hidden;
   color: var(--dark-blue);
 }
- 
-.name{
-  background: linear-gradient(90deg, #3da9fc, #1e40af);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
+
+
 .scroll-btn {
   position: fixed;
   bottom: 30px;
@@ -22,14 +18,24 @@
   transition: all 0.3s ease;
   animation: float 2s ease-in-out infinite;
 }
-
- 
+.homeMobile {
+  display: none;
+}
+.homeDesktop {
+  display: block;
+}
 
 /* Floating animation */
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 @media (max-width: 1400px) {
@@ -39,6 +45,12 @@
 }
 
 @media (max-width: 768px) {
+  .homeMobile {
+    display: block;
+  }
+  .homeDesktop {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
