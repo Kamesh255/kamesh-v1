@@ -11,12 +11,16 @@
   --bg-color: #ffffff;
   --text-color: rgb(0, 29, 97);
   --card-text: #ffffff;
+  --chatboat-bg: rgba(0, 23, 108, 0.9);
+  --chatboat-text: #ffffff;
 }
 
 [data-theme="dark"] {
   --bg-color:  rgb(0, 8, 27) !important;
   --text-color: #6d91aa !important;
   --card-text: #6d91aa;
+    --chatboat-bg: rgba(213, 219, 244, 0.952);
+  --chatboat-text: #000b82;
 }
 
 html,
@@ -33,6 +37,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.chatboat{
+  background-color: var(--chatboat-bg) !important;
+  color: var(--chatboat-text) !important;
 }
 
 * {
@@ -79,6 +87,29 @@ a {
 }
 .fs-7 {
   font-size: 0.8rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0e0090; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000547; 
 }
 
 .skillsTag {

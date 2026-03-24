@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Poppins } from "next/font/google";
 import Footer from "@/components/footer/Footer";
 import ScrollToTop from "./ScrollToTop";
+import FloatingChatbot from "@/components/FloatingChatbot";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -104,6 +105,7 @@ export default function RootLayout({ children }) {
         <ScrollToTop />
         <br />
         <div style={{ marginTop: "70px" }}>{children}</div>
+          <FloatingChatbot />
         <Footer />
       </body>
     </html>
