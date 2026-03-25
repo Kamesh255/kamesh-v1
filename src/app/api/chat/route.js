@@ -27,11 +27,29 @@ export async function POST(req) {
     userRequests.set(ip, timestamps);
 
     const { message } = await req.json();
+    // ✅ CONTACT CUSTOM RESPONSE (ONLY ADD THIS)
+if (/contact/i.test(message)) {
+  return Response.json({
+    reply: `
+📩 You can connect with Kamesh using the options below:
+
+🔹 <a href="https://linkedin.com/in/kamesh-hedau" target="_blank">LinkedIn</a>
+
+🔹 <a href="https://kameshhedau.com/contact" target="_blank">Contact Form</a>
+
+🔹 <a href="mailto:kameshhedau19@gmail.com">Email</a>
+
+🔹 <a href="https://wa.me/918109152546?text=Hi%20Kamesh%20I%20visited%20your%20portfolio" target="_blank">WhatsApp</a>
+
+👉 Click any option to continue.
+    `,
+  });
+}
 
     // ❌ STRICT FILTER (ONLY KAMESH RELATED)
     const isRelevant =
       /kamesh|project|skill|experience|portfolio|contact|frontend|react|next/i.test(
-        message
+        message,
       );
 
     if (!isRelevant) {
@@ -91,7 +109,7 @@ If question is not about Kamesh → refuse.
             },
           ],
         }),
-      }
+      },
     );
 
     const data = await response.json();
