@@ -12,6 +12,10 @@ const suggestions = [
 export default function FloatingChatbot() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState([
+      {
+    role: "bot",
+    text: "👋 Hi! I'm Kamesh Hedau's assistant. Ask me about his skills, projects, or experience.",
+  },
     {
       role: "system",
       content: `
