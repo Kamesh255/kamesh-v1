@@ -230,15 +230,14 @@ Never say you don't know Kamesh.
     <>
       {/* FLOAT BUTTON */}
       <button
+      className="btn-light"
         onClick={() => setOpen(!open)}
         style={{
           position: "fixed",
           bottom: "18px",
           right: "18px",
-          width: "50px",
-          height: "50px",
+          padding: "10px 15px",
           borderRadius: "50%",
-          background: "linear-gradient(135deg,#3b82f6,#6366f1)",
           color: "#fff",
           fontSize: "22px",
           zIndex: 999,
