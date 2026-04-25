@@ -6,7 +6,7 @@ import { useRef, useMemo } from "react";
 
 // 🎯 React Icons
 import { FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaGit } from "react-icons/fa";
-import { SiJavascript, SiNextdotjs, SiTailwindcss, SiThreedotjs, SiGreensock } from "react-icons/si";
+import { SiJavascript, SiNextdotjs, SiTailwindcss, SiThreedotjs, SiGreensock, SiNpm } from "react-icons/si";
 
 // 🎯 Skills with icons
 const skills = [
@@ -72,7 +72,7 @@ function SkillsCloud() {
 }
 
 // 🎮 MAIN HERO
-export default function Hero3DIcons() {
+export default function Game1() {
   return (
  
 

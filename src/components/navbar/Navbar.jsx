@@ -15,7 +15,7 @@ const lobster = Lobster_Two({
 
 const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
-  const [theme, setTheme] = useState("light");
+  // const [theme, setTheme] = useState("light");
 
   const pathname = usePathname();
   const router = useRouter();
@@ -30,23 +30,23 @@ const Navbar = () => {
   };
 
   // load saved theme
-  useEffect(() => {
-    const saved = localStorage.getItem("theme");
-    if (saved) {
-      setTheme(saved);
-      document.documentElement.setAttribute("data-theme", saved);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const saved = localStorage.getItem("theme");
+  //   if (saved) {
+  //     setTheme(saved);
+  //     document.documentElement.setAttribute("data-theme", saved);
+  //   }
+  // }, []);
 
   // apply theme
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
-  }, [theme]);
+  // useEffect(() => {
+  //   document.documentElement.setAttribute("data-theme", theme);
+  //   localStorage.setItem("theme", theme);
+  // }, [theme]);
 
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
+  // const toggleTheme = () => {
+  //   setTheme(theme === "light" ? "dark" : "light");
+  // };
 
   return (
     <>
@@ -102,9 +102,9 @@ const Navbar = () => {
             >
               Resume
             </button>
-            <p className="fs-2" onClick={toggleTheme}>
+            {/* <p className="fs-2" onClick={toggleTheme}>
               {theme === "light" ? <IoIosMoon /> : <MdWbSunny />}
-            </p>
+            </p> */}
             <p
               className={styles.mobile}
               onClick={() => setMobileMenu(!mobileMenu)}

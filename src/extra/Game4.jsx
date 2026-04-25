@@ -58,7 +58,7 @@ function Targets({ setScore, playing }) {
 }
 
 // 🎮 Main Game Component
-export default function ShootingGame() {
+export default function Game4() {
   const [score, setScore] = useState(0);
   const [time, setTime] = useState(30);
   const [playing, setPlaying] = useState(false);

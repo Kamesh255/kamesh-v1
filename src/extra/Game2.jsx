@@ -54,7 +54,7 @@ function Particles() {
   );
 }
 
-export default function ParticleGalaxy() {
+export default function Game2() {
   return (
     <div style={{ height: "400px", width: "100%" }}>
       <Canvas camera={{ position: [0, 0, 5] }}>

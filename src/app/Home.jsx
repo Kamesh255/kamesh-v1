@@ -10,10 +10,16 @@ import { useRouter } from "next/navigation";
 import ScrollButton from "./ScrollButton";
 // import HeroRight from "./HeroRight";
 import dynamic from "next/dynamic";
+import Game1 from "@/extra/Game1";
+import Game2 from "@/extra/Game2";
+import Game3 from "@/extra/Game3";
+import Game4 from "@/extra/Game4";
+import Game5 from "@/extra/Game5";
+import HeroRight from "./HeroRight";
 
-const HeroRight = dynamic(() => import("./HeroRight"), {
-  ssr: false,
-});
+// const HeroRight = dynamic(() => import("./HeroRight"), {
+//   ssr: false,
+// });
 
 export const projects = [
   {
@@ -70,7 +76,7 @@ export const projects = [
 
 const Home = () => {
   useEffect(() => {
-    AOS.init({ duration: 1500 });
+    AOS.init({ duration: 1500, once: true, mirror: false });
   });
   const router = useRouter();
   return (
@@ -125,12 +131,12 @@ const Home = () => {
           </div>
         </div>
         <div className="col-md-6">
-          {/* <div className="homeMobile"> */}
+          {/* <div className="homeMobile">
             <HeroRight />
-          {/* </div> */}
-          {/* <div className="homeDesktop"> */}
-            {/* <HeroSection /> */}
-          {/* </div> */}
+          </div> */}
+          <div className="homeDesktop">
+            <HeroSection />
+          </div>
         </div>
       </div>
 

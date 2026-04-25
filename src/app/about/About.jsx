@@ -92,7 +92,7 @@ const education = [
 
 const About = () => {
   useEffect(() => {
-    AOS.init({ duration: 1500 });
+        AOS.init({ duration: 1500, once: true, mirror: false });
   });
   return (
     <div className="mt-5" style={{ overflow: "hidden" }}>

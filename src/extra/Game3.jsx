@@ -65,7 +65,7 @@ function Balls() {
   );
 }
 
-export default function MagneticBalls() {
+export default function Game3() {
   return (
     <div style={{ height: "400px", width: "100%" }}>
       <Canvas camera={{ position: [0, 0, 8] }}>

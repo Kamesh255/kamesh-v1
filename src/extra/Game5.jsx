@@ -47,7 +47,7 @@ function WavePlane() {
   );
 }
 
-export default function WaveSurface() {
+export default function Game5() {
   return (
     <div style={{ height: "400px", width: "100%" }}>
       <Canvas camera={{ position: [0, 5, 5], fov: 60 }}>
