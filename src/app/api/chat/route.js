@@ -68,7 +68,7 @@ if (/contact/i.test(message)) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          model: "meta-llama/llama-3-8b-instruct",
+          model: "meta-llama/llama-3.1-8b-instruct",
           messages: [
             {
               role: "system",
