@@ -30,7 +30,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "http://plasticinnovations.com/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "Chashmaghar",
@@ -40,7 +40,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://www.chashmaghar.in/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "Arthro 3D",
@@ -50,7 +50,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://arthro3d.com/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "KDCC Bank",
@@ -60,7 +60,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://www.kdccbank.in/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "Chiku Orchard",
@@ -70,7 +70,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://thechiku.in/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
 ];
 
@@ -238,10 +238,10 @@ const Home = () => {
                   </p>
                   {item.projects && item.projects != "" && (
                     <p className="fs-7 my-2 text-start cardText">
-                      <b>Project :</b> {item.projects}
+                      <b>Company :</b> {item.projects}
                     </p>
                   )}
-                  {item.link && item.link != "" && (
+                  {/* {item.link && item.link != "" && (
                     <a
                       href={item.link}
                       target="_blank"
@@ -251,7 +251,7 @@ const Home = () => {
                     >
                       Live link
                     </a>
-                  )}
+                  )} */}
 
                   <p className="mt-3 mb-2 cardText">
                     <b> Tech Stack</b>

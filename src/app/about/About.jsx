@@ -102,7 +102,7 @@ const About = () => {
             About Me
           </h1>
           <p className="fs-5 tjustify  col-md-10 col-12" data-aos="fade-up">
-            I'm a frontend developer with 4 years of experience building modern
+            I'm a frontend developer with 4+ years of experience building modern
             and responsive web applications. I focus on performance, clean code
             and creating seamless user experiences.
           </p>
@@ -207,9 +207,9 @@ const About = () => {
           </div>
         ))}
       </div>
-      <div>
+      {/* <div>
         <CodeStats />
-      </div>
+      </div> */}
       <div>
         <p className="fs-1 fw-bold text-center mt-5" data-aos="fade-up">
           Education

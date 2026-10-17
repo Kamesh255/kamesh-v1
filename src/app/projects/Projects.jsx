@@ -9,7 +9,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "http://plasticinnovations.com/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "May I Services",
@@ -19,7 +19,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://www.mayiservicespvtltd.com/",
     role: "Frontend Developer",
-    // projects : "(client project - Hilab Solutions)"
+    // projects : "Hi-lab Solutions"
   },
   {
     title: "Chashmaghar",
@@ -29,7 +29,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://www.chashmaghar.in/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "Arthro 3D",
@@ -39,7 +39,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://arthro3d.com/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "ARV Services",
@@ -49,7 +49,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://arvservicesconsultant.com/",
     role: "Frontend Developer",
-    // projects : "(client project - Hilab Solutions)",
+    // projects : "Hi-lab Solutions",
   },
   {
     title: "3SUM AI",
@@ -59,7 +59,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://3sum.ai/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "Tripura Gramin Bank",
@@ -69,7 +69,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://www.tripuragraminbank.org/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "KDCC Bank",
@@ -79,7 +79,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://www.kdccbank.in/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "Chiku Orchard",
@@ -89,7 +89,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://thechiku.in/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "Invisible Fiction",
@@ -99,7 +99,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://www.invisiblefiction.com/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "Shrishti School",
@@ -109,7 +109,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "http://www.shristi.edu.in/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "ARIS Insurance",
@@ -119,7 +119,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     // link: "https://wapp.aris-world.com/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "Vetmin",
@@ -129,7 +129,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://www.vetmin.in/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "Diamond Lab",
@@ -139,7 +139,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://diamondlabindia.com/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "Quotr",
@@ -149,7 +149,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://quotrprint.com/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "Tejash Patel",
@@ -159,7 +159,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "https://www.tejashpatel.in/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "New Style",
@@ -169,7 +169,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     // link: "https://newstyle.hilabsolution.in/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "Jackpot",
@@ -179,7 +179,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     // link: "http://jakpot.hilabsolution.in/",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
   {
     title: "Dashboard",
@@ -189,7 +189,7 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     link: "",
     role: "Frontend Developer",
-    projects: "(client project - Hilab Solutions)",
+    projects: "Hi-lab Solutions",
   },
 ];
 
@@ -225,10 +225,10 @@ const Projects = () => {
                 </p>
                 {item.projects && item.projects != "" && (
                   <p className="fs-7 my-2 text-start cardText">
-                    <b>Project :</b> {item.projects}
+                    <b>Company :</b> {item.projects}
                   </p>
                 )}
-                {item.link && item.link != "" && (
+                {/* {item.link && item.link != "" && (
                   <a
                     href={item.link}
                     target="_blank"
@@ -238,7 +238,7 @@ const Projects = () => {
                   >
                     Live link
                   </a>
-                )}
+                )} */}
 
                 <p className="mt-3 mb-2 cardText">
                   <b> Tech Stack</b>
